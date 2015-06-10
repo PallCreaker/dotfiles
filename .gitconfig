@@ -22,9 +22,12 @@
     su = submodule update
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
     fetch-pulls = fetch origin +refs/pull/*:refs/remotes/pull/*
-    
+
     ignore = update-index --assume-unchanged
     unignore = update-index --no-assume-unchanged
     ignored = !git ls-files -v | grep "^[a-z]"
     # http://oli.jp/2012/git-powerup/
     # http://blog.blindgaenger.net/advanced_git_aliases.html
+[user]
+	name = kazumasa.fujita
+	email = kazumasa.fuji@gmail.com
