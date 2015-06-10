@@ -1,0 +1,43 @@
+"vunlde.vimで管理してるpluginを読み込む
+
+filetype off
+
+set nocompatible
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" ここに入れたいプラグインを記入
+
+" Installation check
+if neobundle#exists_not_installed_bundles()
+  echomsg 'Not installed bundles : ' .
+    \ string(neobundle#get_not_installed_bundle_names())
+  echomsg 'Please execute ":NeoBundleInstall" command.'
+          "finish
+endif
+
+" Plugins
+NeoBundle 'Shougo/vimproc', {
+    \ 'build' : {
+        \ 'windows' : 'make -f make_mingw32.mak',
+        \ 'cygwin' : 'make -f make_cygwin.mak',
+        \ 'mac' : 'make -f make_mac.mak',
+        \ 'unix' : 'make -f make_unix.mak',
+  \ },
+\ }                                     " vimproc-ja        : 非同期処理系
+NeoBundle 'Shougo/vimshell'             " Shell             : シェル
+NeoBundle 'Shougo/neocomplcache'        " NeoComplCache     : キーワード補完
+NeoBundle 'Shougo/neomru.vim'           " NeoMRU            : 最近開いたファイル
+NeoBundle 'scrooloose/nerdtree'         " NERDTree          : Filer
+NeoBundle 'scrooloose/syntastic'        " Syntastic         : シンタックスチェック
+NeoBundle 'beyondwords/vim-twig'        " Twig              : Twigのシンタックス
+NeoBundle 'Shougo/unite.vim'            " Unite             : 統合インターフェース
+NeoBundle 'tsukkee/unite-help'          " unite-help        : ヘルプ
+NeoBundle 'thinca/vim-quickrun'         " quickrun          : リアルタイム実行
+
+
+call neobundle#end()
+filetype plugin indent on
