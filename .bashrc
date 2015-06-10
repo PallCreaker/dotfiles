@@ -1,4 +1,4 @@
-source ~/.bashrc
+source ~/.bash_profile
 
 #allias 20130813
 alias ll='ls -la'
