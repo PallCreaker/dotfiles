@@ -1,3 +1,4 @@
+# .bashrc
 
 #allias 20130813
 alias ll='ls -la'
