@@ -21,4 +21,5 @@ source ~/dotfiles/.vimrc.colors
 source ~/dotfiles/.vimrc.editing
 "エンコーディング関連
 source ~/dotfiles/.vimrc.encoding
-"タイトルをバッファ名に変更しない
+"プラグイン依存関連設定
+source ~/dotfiles/.vimrc.plugins_setting
