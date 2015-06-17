@@ -36,6 +36,10 @@ imap <C-p>  <ESC>"*pa
 command! Ev edit $MYVIMRC
 command! Rv source $MYVIMRC
 
+" ;のデフォルトの機能も使いますが、コマンドラインモードに入る方が圧倒的に多いので押しやすい;にコマンドラインモードに入る機能を割り当てています。
+nnoremap ; :
+nnoremap : ;
+
 " ファイルへの相対パスを表示する
 let g:Powerline_stl_path_style = 'relative'
 

@@ -11,8 +11,13 @@ set showmode          " 現在のモードを表示
 
 
 " 全角スペースの表示
-highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
-match ZenkakuSpace /　/
+"highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=red
+"match ZenkakuSpace /　/
+augroup highlightIdegraphicSpace
+  autocmd!
+  autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkRed guibg=darkred
+  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
+augroup END
 
 " カーソル行をハイライト
 set cursorline
