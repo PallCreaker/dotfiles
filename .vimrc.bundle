@@ -37,7 +37,9 @@ NeoBundle 'beyondwords/vim-twig'        " Twig              : Twigのシンタ�
 NeoBundle 'Shougo/unite.vim'            " Unite             : 統合インターフェース
 NeoBundle 'tsukkee/unite-help'          " unite-help        : ヘルプ
 NeoBundle 'thinca/vim-quickrun'         " quickrun          : リアルタイム実行
-
+NeoBundle 'nathanaelkane/vim-indent-guides' " visually indent guide
+NeoBundle 'YankRing.vim'                "YankRing.vim : ヤンクの履歴を管理し、順々に参照、出力できるようにする
+NeoBundle 'yuroyoro/vim-autoclose'      " 自動閉じタグ
 
 call neobundle#end()
 filetype plugin indent on
