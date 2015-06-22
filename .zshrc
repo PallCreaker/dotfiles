@@ -18,7 +18,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally,  if you set this to "random",  it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="amuse"
+ZSH_THEME="agnoster"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -34,21 +34,21 @@ source $ZSH/oh-my-zsh.sh
 # set prompt
 #
 autoload colors
-colors
-case ${UID} in
-0)
-    PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') %B%{${fg[red]}%}%/#%{${reset_color}%}%b "
-    PROMPT2="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
-    SPROMPT="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
-    ;;
-*)
-    PROMPT="%{${fg[red]}%}%/%%%{${reset_color}%} "
-    PROMPT2="%{${fg[red]}%}%_%%%{${reset_color}%} "
-    SPROMPT="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
-    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-        PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
-    ;;
-esac
+#colors
+#case ${UID} in
+#0)
+#    PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') %B%{${fg[red]}%}%/#%{${reset_color}%}%b "
+#    PROMPT2="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
+#    SPROMPT="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
+#    ;;
+#*)
+#    PROMPT="%{${fg[red]}%}%/%%%{${reset_color}%} "
+#    PROMPT2="%{${fg[red]}%}%_%%%{${reset_color}%} "
+#    SPROMPT="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
+#    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
+#        PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
+#    ;;
+#esac
 
 # auto change directory
 #
@@ -63,7 +63,6 @@ setopt auto_pushd
 setopt correct
 
 # compacked complete list display
-#
 setopt list_packed
 
 # no remove postfix slash of command line
@@ -205,3 +204,6 @@ esac
 ## load user .zshrc configuration file
 #
 [ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
+
+## oh my zsh for agnoster install
+[ -f ${HOME}/.zshrc.agnoster ] && source ${HOME}/.zshrc.agnoster
