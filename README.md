@@ -5,3 +5,5 @@
  -  colorsが入っていない。https://github.com/yuroyoro/yuroyoro256.vim
  -  
  
+## tumux.conf
+ - 設定をリロード（ `C-j + r` ）
