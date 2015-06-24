@@ -144,9 +144,9 @@ linux*)
     ;;
 esac
 
-alias la="ls -a"
 alias lf="ls -F"
-alias ll="ls -l"
+alias ll="ls -la"
+alias lll="ls -latr"
 
 alias du="du -h"
 alias df="df -h"
