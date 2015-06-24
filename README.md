@@ -1,6 +1,13 @@
+## Getting Started
+```
+git clone https://github.com/PallCreaker/dotfiles
+./dotfiles/setup.sh
+vim . →　:NeoBundleInstall
+以下のPowerlineの導入　&　iTerm2の設定
+```
+
 ## 【TODO】
- -  colorsが入っていない。https://github.com/yuroyoro/yuroyoro256.vim
- 
+
 ## tumux.conf
  - 設定をリロード（ `C-j + r` ）
  - コマンドラインをコピーするときは、`Option + ドラッグ`
@@ -11,10 +18,10 @@ brew tap sanemat/font
 brew reinstall --powerline --vim-powerline ricty
 # 展開ディレクトリは環境に合わせる
 # 権限が違うかも。
-cp -f /usr/local/Cellar/ricty/3.2.4/share/fonts/Ricty*.ttf ~/Library/Fonts/ 
+cp -f /usr/local/Cellar/ricty/3.2.4/share/fonts/Ricty*.ttf ~/Library/Fonts/
 ```
-@source http://qiita.com/osakanafish/items/731dc31168e3330dbcd0  
-@source http://qiita.com/znz/items/e94b7377f201e7b1683e  
+@source http://qiita.com/osakanafish/items/731dc31168e3330dbcd0
+@source http://qiita.com/znz/items/e94b7377f201e7b1683e
 
 `--powerline` オプションを付ければ https://github.com/Lokaltog/powerline のパッチを当てた `Ricty Regular for Powerline.ttf` などのフォントが、 `--vim-powerline` オプションを付ければ https://github.com/Lokaltog/vim-powerline のパッチを当てた `Ricty-Regular-Powerline.ttf` などのフォントが出来ます。
 

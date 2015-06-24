@@ -11,6 +11,7 @@ done
 # install oh-my-zsh
 [ ! -d ~/.oh-my-zsh ] && git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
+[ ! -d ~/.vim/colors ] && cd && git clone https://github.com/yuroyoro/yuroyoro256.vim.git && mkdir ~/.vim/colors/ && cp yuroyoro256.vim/colors/yuroyoro256.vim ~/.vim/colors/
+
 [ ! -d ~/.vim/bundle ] && mkdir -p ~/.vim/bundle && git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim && echo "you should run following command to setup plugins ->  vim -c ':NeoBundleInstall'"
 
-[ ! -d ~/.vim/colors ] $$ cd $$ git clone https://github.com/yuroyoro/yuroyoro256.vim.git $$ cp yuroyoro.vim/colors/yuroyoro256.vim ~/.vim/colors/
