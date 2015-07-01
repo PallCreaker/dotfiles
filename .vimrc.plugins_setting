@@ -44,3 +44,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=234
 let g:indent_guides_guide_size=4
 " ガイドをスタートするインデントの量
 let g:indent_guides_start_level=1
+"------------------------------------
+" tyru/caw.vim
+"------------------------------------
+"ctrl + / で選択範囲のコメントアウト切り替え
+nmap <C-_> <Plug>(caw:i:toggle)
+vmap <C-_> <Plug>(caw:i:toggle)

@@ -40,7 +40,8 @@ NeoBundle 'thinca/vim-quickrun'         " quickrun          : リアルタイム
 NeoBundle 'nathanaelkane/vim-indent-guides' " visually indent guide
 NeoBundle 'YankRing.vim'                "YankRing.vim : ヤンクの履歴を管理し、順々に参照、出力できるようにする
 NeoBundle 'yuroyoro/vim-autoclose'      " 自動閉じタグ
-NeoBundle 'Lokaltog/vim-powerline'      " vimのpowerline
+NeoBundle 'Lokaltog/vim-powerline'      " vimのstatuslineをかっこ良く
+NeoBundle 'tyru/caw.vim'                "簡単コメントアウト
 
 call neobundle#end()
 filetype plugin indent on
