@@ -31,3 +31,5 @@
 [user]
 	name = kazumasa.fujita
 	email = kazumasa.fuji@gmail.com
+[color]
+	ui = true
