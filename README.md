@@ -10,7 +10,7 @@ vim . →　:NeoBundleInstall
 
 ## How install tumux.conf 
 ###Linux
- - sudo yum install tmux 
+ - sudo yum install tmux zsh
 
 ###MacOS
  - ???
