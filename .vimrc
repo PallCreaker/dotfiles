@@ -4,7 +4,7 @@ source ~/dotfiles/.vimrc.bundle
 "基本設定
 source ~/dotfiles/.vimrc.basic
 "StatusLine設定
-""source ~/dotfiles/.vimrc.statusline
+source ~/dotfiles/.vimrc.statusline
 "インデント設定
 source ~/dotfiles/.vimrc.indent
 "表示関連
@@ -23,3 +23,5 @@ source ~/dotfiles/.vimrc.editing
 source ~/dotfiles/.vimrc.encoding
 "プラグイン依存関連設定
 source ~/dotfiles/.vimrc.plugins_setting
+"tab関連の設定
+source ~/dotfiles/.vimrc.tab
