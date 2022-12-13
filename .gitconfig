@@ -33,3 +33,5 @@
 	email = kazumasa.fuji@gmail.com
 [color]
 	ui = true
+[url "https://"]
+	insteadOf = git://
